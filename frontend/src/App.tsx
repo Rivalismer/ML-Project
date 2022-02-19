@@ -1,11 +1,14 @@
-import React from 'react';
-import ResponsiveAppBar from './components/appbar/AppBar';
+import React from "react";
+import { ThemeProvider } from "@mui/material";
+
+import ResponsiveAppBar from "./components/appbar/AppBar";
+import theme from "./theme";
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
       <ResponsiveAppBar />
-    </div>
+    </ThemeProvider>
   );
 }
 
